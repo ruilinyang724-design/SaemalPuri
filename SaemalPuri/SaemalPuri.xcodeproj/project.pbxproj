@@ -1,0 +1,190 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6BF17963C8A3E31EEC68967 /* SaemalPuriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC79D4CE516BEB63D56D834B /* SaemalPuriApp.swift */; };
+		742C8CB52DD29BB99AA4ADBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FD50C4E133581D287E351 /* ContentView.swift */; };
+		9C710544D1C8EE0E7C74A9C3 /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D39D3F6CC12B551B74D7A8 /* WordEntry.swift */; };
+		5744D5EDC2B05997D69F45F0 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D439FB5DCBC5515A1073696 /* WordDetailView.swift */; };
+		9785BE763F43CBC0AA5E77EE /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */; };
+		F8A1DE8D053E9F40A525F165 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 909015C0DA8FE31C30EC4701 /* words.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F852064177564EF876919D2D /* SaemalPuri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaemalPuri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC79D4CE516BEB63D56D834B /* SaemalPuriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaemalPuriApp.swift; sourceTree = "<group>"; };
+		529FD50C4E133581D287E351 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		00D39D3F6CC12B551B74D7A8 /* WordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntry.swift; sourceTree = "<group>"; };
+		1D439FB5DCBC5515A1073696 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
+		9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
+		909015C0DA8FE31C30EC4701 /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE9E065A8CB127C4E2028D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E1AE432CC4190DB95268591 = {
+			isa = PBXGroup;
+			children = (
+				D978C75AB0BE1264868AB3E5 /* SaemalPuri */,
+				693F7B7318848E2EAFDE8C46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		693F7B7318848E2EAFDE8C46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F852064177564EF876919D2D /* SaemalPuri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D978C75AB0BE1264868AB3E5 /* SaemalPuri */ = {
+			isa = PBXGroup;
+			children = (
+				FC79D4CE516BEB63D56D834B /* SaemalPuriApp.swift */,
+				529FD50C4E133581D287E351 /* ContentView.swift */,
+				00D39D3F6CC12B551B74D7A8 /* WordEntry.swift */,
+				1D439FB5DCBC5515A1073696 /* WordDetailView.swift */,
+				9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */,
+				909015C0DA8FE31C30EC4701 /* words.json */,
+			);
+			path = SaemalPuri;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		364EC0896966FFF45347DCF7 /* SaemalPuri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB0B0AC8880AD859E72B055 /* Build configuration list for PBXNativeTarget "SaemalPuri" */;
+			buildPhases = (
+				EDAB6B065ED11E84752C1C9B /* Sources */,
+				4AE9E065A8CB127C4E2028D3 /* Frameworks */,
+				8A1E4D8EB07CE35CF92326CC /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = SaemalPuri;
+			productName = SaemalPuri;
+			productReference = F852064177564EF876919D2D /* SaemalPuri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91396DA36D8BC9AEBF0D726F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					364EC0896966FFF45347DCF7 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = FF38B4C4276EFAFFBA0EB8D0 /* Build configuration list for PBXProject "SaemalPuri" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base, ko, zh-Hans);
+			mainGroup = 4E1AE432CC4190DB95268591;
+			productRefGroup = 693F7B7318848E2EAFDE8C46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (364EC0896966FFF45347DCF7 /* SaemalPuri */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A1E4D8EB07CE35CF92326CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A1DE8D053E9F40A525F165 /* words.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDAB6B065ED11E84752C1C9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BF17963C8A3E31EEC68967 /* SaemalPuriApp.swift in Sources */,
+				742C8CB52DD29BB99AA4ADBE /* ContentView.swift in Sources */,
+				9C710544D1C8EE0E7C74A9C3 /* WordEntry.swift in Sources */,
+				5744D5EDC2B05997D69F45F0 /* WordDetailView.swift in Sources */,
+				9785BE763F43CBC0AA5E77EE /* WordStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		76185358CFD1C26435FD9444 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+		D459C1B8B621475B54DF7F6F /* Release */ = {isa = XCBuildConfiguration; buildSettings = { IPHONEOS_DEPLOYMENT_TARGET = 17.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+		D1FB3B405636468E1673C1C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "새말풀이";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruilinyang724.SaemalPuri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EAD8B39D30705CBF51C6EDC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "새말풀이";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ruilinyang724.SaemalPuri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF38B4C4276EFAFFBA0EB8D0 /* Build configuration list for PBXProject "SaemalPuri" */ = {isa = XCConfigurationList; buildConfigurations = (76185358CFD1C26435FD9444 /* Debug */, D459C1B8B621475B54DF7F6F /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		EAB0B0AC8880AD859E72B055 /* Build configuration list for PBXNativeTarget "SaemalPuri" */ = {isa = XCConfigurationList; buildConfigurations = (D1FB3B405636468E1673C1C4 /* Debug */, EAD8B39D30705CBF51C6EDC9 /* Release */,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 91396DA36D8BC9AEBF0D726F /* Project object */;
+}

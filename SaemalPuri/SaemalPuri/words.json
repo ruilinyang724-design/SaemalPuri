@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "word": "되작이",
+    "sourceWord": "Browser / 브라우저 / 浏览器",
+    "category": "网络科技",
+    "formation": "되작거리다 + -이",
+    "meaning": "用于浏览网页、翻找网络内容的工具。",
+    "note": "替代 외래어 브라우저。"
+  },
+  {
+    "id": 2,
+    "word": "누리집터",
+    "sourceWord": "Website / 웹사이트 / 网站",
+    "category": "网络科技",
+    "formation": "누리집 + 터",
+    "meaning": "网络上的站点、网页集合。",
+    "note": "用于替代 웹사이트。"
+  },
+  {
+    "id": 3,
+    "word": "맞낯",
+    "sourceWord": "Interface / 인터페이스 / 界面",
+    "category": "网络科技",
+    "formation": "맞- + 낯",
+    "meaning": "人与程序、程序与程序相互接触的表面。",
+    "note": "用于替代 인터페이스。"
+  },
+  {
+    "id": 4,
+    "word": "내리싣기",
+    "sourceWord": "Download / 다운로드 / 下载",
+    "category": "网络科技",
+    "formation": "내리다 + 싣기",
+    "meaning": "把远端资料载入本机的行为。",
+    "note": "对应下载。"
+  },
+  {
+    "id": 5,
+    "word": "맞그물질",
+    "sourceWord": "Internet / 인터넷 / 互联网",
+    "category": "网络科技",
+    "formation": "맞- + 그물 + -질",
+    "meaning": "彼此相连的网络体系。",
+    "note": "用于表达互联网、互联网络。"
+  },
+  {
+    "id": 6,
+    "word": "버금그물막이",
+    "sourceWord": "Subnet Mask / 서브넷 마스크 / 子网掩码",
+    "category": "网络科技",
+    "formation": "버금 + 그물 + 막이",
+    "meaning": "用于划分网络范围的遮罩。",
+    "note": "对应 subnet mask。"
+  },
+  {
+    "id": 7,
+    "word": "앆음",
+    "sourceWord": "Economy / 경제 / 经济",
+    "category": "经济财政",
+    "formation": "아끼다 系词根",
+    "meaning": "资源、财物、生产、分配与使用的总体活动。",
+    "note": "用于替代 경제。"
+  },
+  {
+    "id": 8,
+    "word": "앆음질",
+    "sourceWord": "Finance / 재정 / 财政",
+    "category": "经济财政",
+    "formation": "앆음 + -질",
+    "meaning": "关于财物收支、调度与治理的活动。",
+    "note": "用于替代 재정。"
+  },
+  {
+    "id": 9,
+    "word": "밖어음",
+    "sourceWord": "Foreign Exchange / 외환 / 外汇",
+    "category": "经济财政",
+    "formation": "밖 + 어음",
+    "meaning": "外部货币、外币票据或外汇体系。",
+    "note": "用于替代 외환。"
+  },
+  {
+    "id": 10,
+    "word": "치름치",
+    "sourceWord": "Currency / 화폐 / 货币",
+    "category": "经济财政",
+    "formation": "치르다 + -ㅁ + -치",
+    "meaning": "用于支付、清偿和交换的东西。",
+    "note": "对应货币、支付媒介。"
+  },
+  {
+    "id": 11,
+    "word": "작은마마",
+    "sourceWord": "Chickenpox / 수두 / 水痘",
+    "category": "医学",
+    "formation": "작은 + 마마",
+    "meaning": "较轻的痘疹疾病。",
+    "note": "对应水痘。"
+  },
+  {
+    "id": 12,
+    "word": "큰마마",
+    "sourceWord": "Smallpox / 천연두 / 天然痘",
+    "category": "医学",
+    "formation": "큰 + 마마",
+    "meaning": "严重的痘疹疾病。",
+    "note": "对应天花、天然痘。"
+  },
+  {
+    "id": 13,
+    "word": "쇠마마",
+    "sourceWord": "Cowpox / 우두 / 牛痘",
+    "category": "医学",
+    "formation": "쇠 + 마마",
+    "meaning": "与牛相关的痘疹疾病。",
+    "note": "对应牛痘。"
+  },
+  {
+    "id": 14,
+    "word": "마마맞이",
+    "sourceWord": "Vaccine / 백신 / 疫苗",
+    "category": "医学",
+    "formation": "마마 + 맞이",
+    "meaning": "通过预先接触来抵御疾病的东西。",
+    "note": "用于替代 백신。"
+  },
+  {
+    "id": 15,
+    "word": "알맞이",
+    "sourceWord": "App / 앱 / 应用",
+    "category": "网络科技",
+    "formation": "알맞다 系 + -이",
+    "meaning": "适用于某种用途的程序。",
+    "note": "用于替代 앱、application。"
+  }
+]
