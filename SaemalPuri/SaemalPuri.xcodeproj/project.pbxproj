@@ -12,6 +12,14 @@
 		5744D5EDC2B05997D69F45F0 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D439FB5DCBC5515A1073696 /* WordDetailView.swift */; };
 		9785BE763F43CBC0AA5E77EE /* WordStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */; };
 		F8A1DE8D053E9F40A525F165 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = 909015C0DA8FE31C30EC4701 /* words.json */; };
+		D00000000000000000000001 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000001 /* Theme.swift */; };
+		D00000000000000000000002 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000002 /* FavoriteStore.swift */; };
+		D00000000000000000000003 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000003 /* RootTabView.swift */; };
+		D00000000000000000000004 /* ThemedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000004 /* ThemedViews.swift */; };
+		D00000000000000000000005 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000005 /* CategoryView.swift */; };
+		D00000000000000000000006 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000006 /* FavoritesView.swift */; };
+		D00000000000000000000007 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00000000000000000000007 /* SettingsView.swift */; };
+		B1B1B1B1B1B1B1B1B1B1B1B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A1A1A1A1A1A1A1A1A1A1A1 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		1D439FB5DCBC5515A1073696 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
 		9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordStore.swift; sourceTree = "<group>"; };
 		909015C0DA8FE31C30EC4701 /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		C00000000000000000000001 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C00000000000000000000002 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
+		C00000000000000000000003 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		C00000000000000000000004 /* ThemedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemedViews.swift; sourceTree = "<group>"; };
+		C00000000000000000000005 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		C00000000000000000000006 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		C00000000000000000000007 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A1A1A1A1A1A1A1A1A1A1A1A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 				00D39D3F6CC12B551B74D7A8 /* WordEntry.swift */,
 				1D439FB5DCBC5515A1073696 /* WordDetailView.swift */,
 				9A87EDB0234E691BC8A1E6B9 /* WordStore.swift */,
+				C00000000000000000000001 /* Theme.swift */,
+				C00000000000000000000002 /* FavoriteStore.swift */,
+				C00000000000000000000003 /* RootTabView.swift */,
+				C00000000000000000000004 /* ThemedViews.swift */,
+				C00000000000000000000005 /* CategoryView.swift */,
+				C00000000000000000000006 /* FavoritesView.swift */,
+				C00000000000000000000007 /* SettingsView.swift */,
+				A1A1A1A1A1A1A1A1A1A1A1A1 /* Assets.xcassets */,
 				909015C0DA8FE31C30EC4701 /* words.json */,
 			);
 			path = SaemalPuri;
@@ -115,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A1DE8D053E9F40A525F165 /* words.json in Resources */,
+				B1B1B1B1B1B1B1B1B1B1B1B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +155,13 @@
 				9C710544D1C8EE0E7C74A9C3 /* WordEntry.swift in Sources */,
 				5744D5EDC2B05997D69F45F0 /* WordDetailView.swift in Sources */,
 				9785BE763F43CBC0AA5E77EE /* WordStore.swift in Sources */,
+				D00000000000000000000001 /* Theme.swift in Sources */,
+				D00000000000000000000002 /* FavoriteStore.swift in Sources */,
+				D00000000000000000000003 /* RootTabView.swift in Sources */,
+				D00000000000000000000004 /* ThemedViews.swift in Sources */,
+				D00000000000000000000005 /* CategoryView.swift in Sources */,
+				D00000000000000000000006 /* FavoritesView.swift in Sources */,
+				D00000000000000000000007 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +181,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "새말풀이";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruilinyang724.SaemalPuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -169,7 +201,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "새말풀이";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ruilinyang724.SaemalPuri;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

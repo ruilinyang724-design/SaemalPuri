@@ -9,8 +9,7 @@ final class WordStore {
 
         do {
             let data = try Data(contentsOf: url)
-            let entries = try JSONDecoder().decode([WordEntry].self, from: data)
-            return entries
+            return try JSONDecoder().decode([WordEntry].self, from: data)
         } catch {
             print("读取 words.json 失败：\(error)")
             return []
