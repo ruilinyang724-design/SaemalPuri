@@ -6,24 +6,30 @@ struct SettingsView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                ThemedBackground()
+            GeometryReader { proxy in
+                ZStack {
+                    ThemedBackground()
 
-                ScrollView(showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("设置")
-                            .font(.system(size: 34, weight: .bold, design: .rounded))
-                            .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 20) {
+                            Text("设置")
+                                .font(.system(size: 34, weight: .bold, design: .rounded))
+                                .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
 
-                        themeSection
-                        accentSection
-                        iconSection
-                        dataSection
-                        aboutSection
+                            themeSection
+                            accentSection
+                            iconSection
+                            dataSection
+                            aboutSection
+                        }
+                        .padding(18)
+                        .padding(.bottom, 26)
+                        .frame(width: proxy.size.width, alignment: .leading)
                     }
-                    .padding(18)
-                    .padding(.bottom, 26)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
                 }
+                .frame(width: proxy.size.width, height: proxy.size.height)
+                .clipped()
             }
             .navigationBarHidden(true)
         }
@@ -70,28 +76,31 @@ struct SettingsView: View {
                     .font(.headline)
                     .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
 
-                HStack(spacing: 15) {
-                    ForEach(AccentTheme.allCases) { accent in
-                        Button {
-                            settings.accent = accent
-                        } label: {
-                            Circle()
-                                .fill(accent.color)
-                                .frame(width: 34, height: 34)
-                                .overlay(
-                                    Circle()
-                                        .stroke(Color.white.opacity(0.85), lineWidth: settings.accent == accent ? 3 : 0)
-                                )
-                                .overlay {
-                                    if settings.accent == accent {
-                                        Image(systemName: "checkmark")
-                                            .font(.caption.bold())
-                                            .foregroundStyle(.white)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 15) {
+                        ForEach(AccentTheme.allCases) { accent in
+                            Button {
+                                settings.accent = accent
+                            } label: {
+                                Circle()
+                                    .fill(accent.color)
+                                    .frame(width: 34, height: 34)
+                                    .overlay(
+                                        Circle()
+                                            .stroke(Color.white.opacity(0.85), lineWidth: settings.accent == accent ? 3 : 0)
+                                    )
+                                    .overlay {
+                                        if settings.accent == accent {
+                                            Image(systemName: "checkmark")
+                                                .font(.caption.bold())
+                                                .foregroundStyle(.white)
+                                        }
                                     }
-                                }
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
                     }
+                    .padding(.vertical, 2)
                 }
             }
             .padding(18)

@@ -6,23 +6,29 @@ struct WordDetailView: View {
     let entry: WordEntry
 
     var body: some View {
-        ZStack {
-            ThemedBackground()
+        GeometryReader { proxy in
+            ZStack {
+                ThemedBackground()
 
-            ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 18) {
-                    heroCard
-                    detailCard(title: "构词", content: entry.formation, icon: "sparkles")
-                    detailCard(title: "释义", content: entry.meaning, icon: "text.book.closed.fill")
-                    detailCard(title: "备注", content: entry.note, icon: "note.text")
-                    examplesCard
-                    wordTagsCard(title: "近义词", words: entry.synonyms ?? [], icon: "arrow.left.arrow.right")
-                    wordTagsCard(title: "反义词", words: entry.antonyms ?? [], icon: "arrow.up.arrow.down")
-                    actionButtons
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 18) {
+                        heroCard
+                        detailCard(title: "构词", content: entry.formation, icon: "sparkles")
+                        detailCard(title: "释义", content: entry.meaning, icon: "text.book.closed.fill")
+                        detailCard(title: "备注", content: entry.note, icon: "note.text")
+                        examplesCard
+                        wordTagsCard(title: "近义词", words: entry.synonyms ?? [], icon: "arrow.left.arrow.right")
+                        wordTagsCard(title: "反义词", words: entry.antonyms ?? [], icon: "arrow.up.arrow.down")
+                        actionButtons
+                    }
+                    .padding(18)
+                    .padding(.bottom, 26)
+                    .frame(width: proxy.size.width, alignment: .leading)
                 }
-                .padding(18)
-                .padding(.bottom, 26)
+                .frame(width: proxy.size.width, height: proxy.size.height)
             }
+            .frame(width: proxy.size.width, height: proxy.size.height)
+            .clipped()
         }
         .navigationTitle("词条详情")
         .navigationBarTitleDisplayMode(.inline)

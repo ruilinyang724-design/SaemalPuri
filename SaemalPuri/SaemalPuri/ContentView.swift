@@ -29,20 +29,26 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                ThemedBackground()
+            GeometryReader { proxy in
+                ZStack {
+                    ThemedBackground()
 
-                ScrollView(showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 20) {
-                        header
-                        searchBar
-                        categoryScroller
-                        wordList
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 20) {
+                            header
+                            searchBar
+                            categoryScroller
+                            wordList
+                        }
+                        .padding(.horizontal, 18)
+                        .padding(.top, 18)
+                        .padding(.bottom, 28)
+                        .frame(width: proxy.size.width, alignment: .leading)
                     }
-                    .padding(.horizontal, 18)
-                    .padding(.top, 18)
-                    .padding(.bottom, 28)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
                 }
+                .frame(width: proxy.size.width, height: proxy.size.height)
+                .clipped()
             }
             .navigationBarHidden(true)
         }

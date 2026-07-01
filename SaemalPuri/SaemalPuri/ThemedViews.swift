@@ -5,29 +5,32 @@ struct ThemedBackground: View {
     @EnvironmentObject private var settings: AppSettings
 
     var body: some View {
-        ZStack {
-            LinearGradient(
-                colors: colorScheme == .dark
-                ? [.appBgDark, Color(red: 0.06, green: 0.02, blue: 0.09), Color.black]
-                : [.appBgLight, Color(red: 1.0, green: 0.93, blue: 0.98), Color(red: 0.96, green: 0.93, blue: 1.0)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
+        GeometryReader { proxy in
+            ZStack {
+                LinearGradient(
+                    colors: colorScheme == .dark
+                    ? [.appBgDark, Color(red: 0.06, green: 0.02, blue: 0.09), Color.black]
+                    : [.appBgLight, Color(red: 1.0, green: 0.93, blue: 0.98), Color(red: 0.96, green: 0.93, blue: 1.0)],
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
 
-            Image(colorScheme == .dark ? "HeroDark" : "HeroLight")
-                .resizable()
-                .scaledToFill()
-                .opacity(colorScheme == .dark ? 0.13 : 0.10)
-                .blur(radius: 0.5)
-                .ignoresSafeArea()
+                Image(colorScheme == .dark ? "HeroDark" : "HeroLight")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                    .clipped()
+                    .opacity(colorScheme == .dark ? 0.13 : 0.10)
+                    .blur(radius: 0.5)
 
-            RadialGradient(
-                colors: [settings.accent.color.opacity(colorScheme == .dark ? 0.22 : 0.15), .clear],
-                center: .topTrailing,
-                startRadius: 30,
-                endRadius: 360
-            )
-            .ignoresSafeArea()
+                RadialGradient(
+                    colors: [settings.accent.color.opacity(colorScheme == .dark ? 0.22 : 0.15), .clear],
+                    center: .topTrailing,
+                    startRadius: 30,
+                    endRadius: 360
+                )
+            }
+            .frame(width: proxy.size.width, height: proxy.size.height)
         }
         .ignoresSafeArea()
     }

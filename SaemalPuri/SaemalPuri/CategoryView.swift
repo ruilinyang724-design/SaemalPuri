@@ -13,52 +13,58 @@ struct CategoryView: View {
 
     var body: some View {
         NavigationStack {
-            ZStack {
-                ThemedBackground()
+            GeometryReader { proxy in
+                ZStack {
+                    ThemedBackground()
 
-                ScrollView(showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 18) {
-                        Text("分类")
-                            .font(.system(size: 34, weight: .bold, design: .rounded))
-                            .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 18) {
+                            Text("分类")
+                                .font(.system(size: 34, weight: .bold, design: .rounded))
+                                .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
 
-                        ForEach(grouped, id: \.0) { category, words in
-                            NavigationLink {
-                                CategoryWordListView(category: category, entries: words)
-                            } label: {
-                                FrostedCard(cornerRadius: 18) {
-                                    HStack(spacing: 14) {
-                                        Image(systemName: icon(for: category))
-                                            .font(.title2)
-                                            .foregroundStyle(settings.accent.color)
-                                            .frame(width: 42, height: 42)
-                                            .background(settings.accent.color.opacity(0.14))
-                                            .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                            ForEach(grouped, id: \.0) { category, words in
+                                NavigationLink {
+                                    CategoryWordListView(category: category, entries: words)
+                                } label: {
+                                    FrostedCard(cornerRadius: 18) {
+                                        HStack(spacing: 14) {
+                                            Image(systemName: icon(for: category))
+                                                .font(.title2)
+                                                .foregroundStyle(settings.accent.color)
+                                                .frame(width: 42, height: 42)
+                                                .background(settings.accent.color.opacity(0.14))
+                                                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
 
-                                        VStack(alignment: .leading, spacing: 4) {
-                                            Text(category)
+                                            VStack(alignment: .leading, spacing: 4) {
+                                                Text(category)
+                                                    .font(.headline)
+                                                    .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                                                Text("\(words.count) 个词条")
+                                                    .font(.subheadline)
+                                                    .foregroundStyle(colorScheme == .dark ? Color.secondaryDark : .secondary)
+                                            }
+
+                                            Spacer()
+
+                                            Text("\(words.count)")
                                                 .font(.headline)
-                                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
-                                            Text("\(words.count) 个词条")
-                                                .font(.subheadline)
-                                                .foregroundStyle(colorScheme == .dark ? Color.secondaryDark : .secondary)
+                                                .foregroundStyle(settings.accent.color)
                                         }
-
-                                        Spacer()
-
-                                        Text("\(words.count)")
-                                            .font(.headline)
-                                            .foregroundStyle(settings.accent.color)
+                                        .padding(16)
                                     }
-                                    .padding(16)
                                 }
+                                .buttonStyle(.plain)
                             }
-                            .buttonStyle(.plain)
                         }
+                        .padding(18)
+                        .padding(.bottom, 24)
+                        .frame(width: proxy.size.width, alignment: .leading)
                     }
-                    .padding(18)
-                    .padding(.bottom, 24)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
                 }
+                .frame(width: proxy.size.width, height: proxy.size.height)
+                .clipped()
             }
             .navigationBarHidden(true)
         }
@@ -93,26 +99,32 @@ struct CategoryWordListView: View {
     let entries: [WordEntry]
 
     var body: some View {
-        ZStack {
-            ThemedBackground()
+        GeometryReader { proxy in
+            ZStack {
+                ThemedBackground()
 
-            ScrollView(showsIndicators: false) {
-                VStack(alignment: .leading, spacing: 14) {
-                    Text(category)
-                        .font(.system(size: 32, weight: .bold, design: .rounded))
-                        .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 14) {
+                        Text(category)
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .foregroundStyle(colorScheme == .dark ? Color.titleDark : Color.titleLight)
 
-                    ForEach(entries) { entry in
-                        NavigationLink {
-                            WordDetailView(entry: entry)
-                        } label: {
-                            WordRowCard(entry: entry)
+                        ForEach(entries) { entry in
+                            NavigationLink {
+                                WordDetailView(entry: entry)
+                            } label: {
+                                WordRowCard(entry: entry)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
                     }
+                    .padding(18)
+                    .frame(width: proxy.size.width, alignment: .leading)
                 }
-                .padding(18)
+                .frame(width: proxy.size.width, height: proxy.size.height)
             }
+            .frame(width: proxy.size.width, height: proxy.size.height)
+            .clipped()
         }
         .navigationTitle(category)
         .navigationBarTitleDisplayMode(.inline)
